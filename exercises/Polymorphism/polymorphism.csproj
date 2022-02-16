@@ -1,0 +1,156 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{671D6CEB-0067-41D5-8216-883DE4D26592}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>polymorphism</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hierarchy.png" />
+    <Content Include="Persons\persons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AdApp\AdApp.csproj" />
+    <None Include="AdApp\obj\Debug\netcoreapp2.2\AdApp.AssemblyInfoInputs.cache" />
+    <None Include="AdApp\obj\Debug\netcoreapp2.2\AdApp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="AdApp\obj\Release\netcoreapp2.2\AdApp.AssemblyInfoInputs.cache" />
+    <None Include="AdApp\obj\Release\netcoreapp2.2\AdApp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="DragRace\DragRace.csproj" />
+    <None Include="DragRace\obj\Debug\netcoreapp2.2\DragRace.AssemblyInfoInputs.cache" />
+    <None Include="DragRace\obj\Debug\netcoreapp2.2\DragRace.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="DragRace\obj\Release\netcoreapp2.2\DragRace.AssemblyInfoInputs.cache" />
+    <None Include="DragRace\obj\Release\netcoreapp2.2\DragRace.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Firm\Firm.csproj" />
+    <None Include="Firm\obj\Debug\netcoreapp2.2\Firm.AssemblyInfoInputs.cache" />
+    <None Include="Firm\obj\Debug\netcoreapp2.2\Firm.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Firm\obj\Release\netcoreapp2.2\Firm.AssemblyInfoInputs.cache" />
+    <None Include="Firm\obj\Release\netcoreapp2.2\Firm.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Hierarchy\Hierarchy.csproj" />
+    <None Include="Hierarchy\obj\Debug\netcoreapp2.2\Hierarchy.AssemblyInfoInputs.cache" />
+    <None Include="Hierarchy\obj\Debug\netcoreapp2.2\Hierarchy.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Hierarchy\obj\Release\netcoreapp2.2\Hierarchy.AssemblyInfoInputs.cache" />
+    <None Include="Hierarchy\obj\Release\netcoreapp2.2\Hierarchy.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="MakeSounds\MakeSounds.csproj" />
+    <None Include="MakeSounds\obj\Debug\netcoreapp2.2\MakeSounds.AssemblyInfoInputs.cache" />
+    <None Include="MakeSounds\obj\Debug\netcoreapp2.2\MakeSounds.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="MakeSounds\obj\Release\netcoreapp2.2\MakeSounds.AssemblyInfoInputs.cache" />
+    <None Include="MakeSounds\obj\Release\netcoreapp2.2\MakeSounds.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Persons\obj\Debug\netcoreapp2.2\Persons.AssemblyInfoInputs.cache" />
+    <None Include="Persons\obj\Debug\netcoreapp2.2\Persons.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Persons\obj\Release\netcoreapp2.2\Persons.AssemblyInfoInputs.cache" />
+    <None Include="Persons\obj\Release\netcoreapp2.2\Persons.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Persons\Persons.csproj" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdApp\Advert.cs" />
+    <Compile Include="AdApp\Campaign.cs" />
+    <Compile Include="AdApp\Hoarding.cs" />
+    <Compile Include="AdApp\NewspaperAd.cs" />
+    <Compile Include="AdApp\obj\Debug\netcoreapp2.2\.NETCoreApp,Version=v2.2.AssemblyAttributes.cs" />
+    <Compile Include="AdApp\obj\Debug\netcoreapp2.2\AdApp.AssemblyInfo.cs" />
+    <Compile Include="AdApp\obj\Release\netcoreapp2.2\.NETCoreApp,Version=v2.2.AssemblyAttributes.cs" />
+    <Compile Include="AdApp\obj\Release\netcoreapp2.2\AdApp.AssemblyInfo.cs" />
+    <Compile Include="AdApp\Program.cs" />
+    <Compile Include="AdApp\TVAd.cs" />
+    <Compile Include="DragRace\Audi.cs" />
+    <Compile Include="DragRace\Bmw.cs" />
+    <Compile Include="DragRace\IBoostable.cs" />
+    <Compile Include="DragRace\ICar.cs" />
+    <Compile Include="DragRace\Lada.cs" />
+    <Compile Include="DragRace\Lexus.cs" />
+    <Compile Include="DragRace\obj\Debug\netcoreapp2.2\.NETCoreApp,Version=v2.2.AssemblyAttributes.cs" />
+    <Compile Include="DragRace\obj\Debug\netcoreapp2.2\DragRace.AssemblyInfo.cs" />
+    <Compile Include="DragRace\obj\Release\netcoreapp2.2\.NETCoreApp,Version=v2.2.AssemblyAttributes.cs" />
+    <Compile Include="DragRace\obj\Release\netcoreapp2.2\DragRace.AssemblyInfo.cs" />
+    <Compile Include="DragRace\Program.cs" />
+    <Compile Include="DragRace\Tesla.cs" />
+    <Compile Include="DragRace\Volvo.cs" />
+    <Compile Include="Firm\Employee.cs" />
+    <Compile Include="Firm\Executive.cs" />
+    <Compile Include="Firm\Hourly.cs" />
+    <Compile Include="Firm\obj\Debug\netcoreapp2.2\.NETCoreApp,Version=v2.2.AssemblyAttributes.cs" />
+    <Compile Include="Firm\obj\Debug\netcoreapp2.2\Firm.AssemblyInfo.cs" />
+    <Compile Include="Firm\obj\Release\netcoreapp2.2\.NETCoreApp,Version=v2.2.AssemblyAttributes.cs" />
+    <Compile Include="Firm\obj\Release\netcoreapp2.2\Firm.AssemblyInfo.cs" />
+    <Compile Include="Firm\Program.cs" />
+    <Compile Include="Firm\Staff.cs" />
+    <Compile Include="Firm\StaffMember.cs" />
+    <Compile Include="Firm\Volunteer.cs" />
+    <Compile Include="Hierarchy\obj\Debug\netcoreapp2.2\.NETCoreApp,Version=v2.2.AssemblyAttributes.cs" />
+    <Compile Include="Hierarchy\obj\Debug\netcoreapp2.2\Hierarchy.AssemblyInfo.cs" />
+    <Compile Include="Hierarchy\obj\Release\netcoreapp2.2\.NETCoreApp,Version=v2.2.AssemblyAttributes.cs" />
+    <Compile Include="Hierarchy\obj\Release\netcoreapp2.2\Hierarchy.AssemblyInfo.cs" />
+    <Compile Include="Hierarchy\Program.cs" />
+    <Compile Include="MakeSounds\Firework.cs" />
+    <Compile Include="MakeSounds\ISound.cs" />
+    <Compile Include="MakeSounds\obj\Debug\netcoreapp2.2\.NETCoreApp,Version=v2.2.AssemblyAttributes.cs" />
+    <Compile Include="MakeSounds\obj\Debug\netcoreapp2.2\MakeSounds.AssemblyInfo.cs" />
+    <Compile Include="MakeSounds\obj\Release\netcoreapp2.2\.NETCoreApp,Version=v2.2.AssemblyAttributes.cs" />
+    <Compile Include="MakeSounds\obj\Release\netcoreapp2.2\MakeSounds.AssemblyInfo.cs" />
+    <Compile Include="MakeSounds\Program.cs" />
+    <Compile Include="Persons\obj\Debug\netcoreapp2.2\.NETCoreApp,Version=v2.2.AssemblyAttributes.cs" />
+    <Compile Include="Persons\obj\Debug\netcoreapp2.2\Persons.AssemblyInfo.cs" />
+    <Compile Include="Persons\obj\Release\netcoreapp2.2\.NETCoreApp,Version=v2.2.AssemblyAttributes.cs" />
+    <Compile Include="Persons\obj\Release\netcoreapp2.2\Persons.AssemblyInfo.cs" />
+    <Compile Include="Persons\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\polymorphism\v17\" />
+    <Folder Include="AdApp\bin\Debug\netcoreapp2.2\" />
+    <Folder Include="AdApp\bin\Release\netcoreapp2.2\" />
+    <Folder Include="DragRace\bin\Debug\netcoreapp2.2\" />
+    <Folder Include="DragRace\bin\Release\netcoreapp2.2\" />
+    <Folder Include="Firm\bin\Debug\netcoreapp2.2\" />
+    <Folder Include="Firm\bin\Release\netcoreapp2.2\" />
+    <Folder Include="Hierarchy\bin\Debug\netcoreapp2.2\" />
+    <Folder Include="Hierarchy\bin\Release\netcoreapp2.2\" />
+    <Folder Include="MakeSounds\bin\Debug\netcoreapp2.2\" />
+    <Folder Include="MakeSounds\bin\Release\netcoreapp2.2\" />
+    <Folder Include="Persons\bin\Debug\netcoreapp2.2\" />
+    <Folder Include="Persons\bin\Release\netcoreapp2.2\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
