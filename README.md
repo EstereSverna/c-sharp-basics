@@ -1,4 +1,4 @@
-# C# Basics // training exercises
+# C# Basics // My Training Exercises
 
 # Types & Variables
 
